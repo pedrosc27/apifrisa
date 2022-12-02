@@ -1,0 +1,549 @@
+[
+    {
+        "id": 130,
+        "name": "Acero Inoxidable",
+        "parent": 9
+    },
+    {
+        "id": 149,
+        "name": "Acero Sinterizado",
+        "parent": 9
+    },
+    {
+        "id": 140,
+        "name": "Carbón Grafito",
+        "parent": 9
+    },
+    {
+        "id": 128,
+        "name": "Carburo de Silicio",
+        "parent": 9
+    },
+    {
+        "id": 129,
+        "name": "Carburo de Tungsteno",
+        "parent": 9
+    },
+    {
+        "id": 127,
+        "name": "Cerámica",
+        "parent": 9
+    },
+    {
+        "id": 131,
+        "name": "Ni-Resist",
+        "parent": 9
+    },
+    {
+        "id": 142,
+        "name": "Teflón libre de Asbesto",
+        "parent": 9
+    },
+    {
+        "id": 147,
+        "name": "Acero inoxidable 316",
+        "parent": 7
+    },
+    {
+        "id": 141,
+        "name": "Carbón Fenólico",
+        "parent": 7
+    },
+    {
+        "id": 120,
+        "name": "Carbón Grafito",
+        "parent": 7
+    },
+    {
+        "id": 151,
+        "name": "Carbón Grafito FDA",
+        "parent": 7
+    },
+    {
+        "id": 121,
+        "name": "Carburo de Silicio",
+        "parent": 7
+    },
+    {
+        "id": 122,
+        "name": "Carburo de Tungsteno",
+        "parent": 7
+    },
+    {
+        "id": 146,
+        "name": "Céramica",
+        "parent": 7
+    },
+    {
+        "id": 139,
+        "name": "PTFE/Fibra de Vidrio",
+        "parent": 7
+    },
+    {
+        "id": 135,
+        "name": "Aflas (TFE/P)",
+        "parent": 8
+    },
+    {
+        "id": 125,
+        "name": "CR (Neopreno®)",
+        "parent": 8
+    },
+    {
+        "id": 136,
+        "name": "Creavey (PTFE/FKM)",
+        "parent": 8
+    },
+    {
+        "id": 126,
+        "name": "E.P.R (EPDM)",
+        "parent": 8
+    },
+    {
+        "id": 124,
+        "name": "FKM (Vitón®)",
+        "parent": 8
+    },
+    {
+        "id": 153,
+        "name": "FKM FDA",
+        "parent": 8
+    },
+    {
+        "id": 143,
+        "name": "Grafito exfoliado (Grafoil)",
+        "parent": 8
+    },
+    {
+        "id": 134,
+        "name": "Kalrez (FFKM)",
+        "parent": 8
+    },
+    {
+        "id": 123,
+        "name": "NBR (Nitrilo®)",
+        "parent": 8
+    },
+    {
+        "id": 152,
+        "name": "NBR FDA",
+        "parent": 8
+    },
+    {
+        "id": 150,
+        "name": "PTE (Termoplástico)",
+        "parent": 8
+    },
+    {
+        "id": 137,
+        "name": "Silicón (VMQ)",
+        "parent": 8
+    },
+    {
+        "id": 145,
+        "name": "Teflón (PTFE)",
+        "parent": 8
+    },
+    {
+        "id": 51,
+        "name": "10 mm",
+        "parent": 6
+    },
+    {
+        "id": 82,
+        "name": "100 mm",
+        "parent": 6
+    },
+    {
+        "id": 52,
+        "name": "11 mm",
+        "parent": 6
+    },
+    {
+        "id": 53,
+        "name": "12 mm",
+        "parent": 6
+    },
+    {
+        "id": 54,
+        "name": "13 mm",
+        "parent": 6
+    },
+    {
+        "id": 55,
+        "name": "14 mm",
+        "parent": 6
+    },
+    {
+        "id": 56,
+        "name": "15 mm",
+        "parent": 6
+    },
+    {
+        "id": 57,
+        "name": "16 mm",
+        "parent": 6
+    },
+    {
+        "id": 58,
+        "name": "17 mm",
+        "parent": 6
+    },
+    {
+        "id": 59,
+        "name": "18 mm",
+        "parent": 6
+    },
+    {
+        "id": 60,
+        "name": "19 mm",
+        "parent": 6
+    },
+    {
+        "id": 61,
+        "name": "20 mm",
+        "parent": 6
+    },
+    {
+        "id": 62,
+        "name": "21 mm",
+        "parent": 6
+    },
+    {
+        "id": 63,
+        "name": "22 mm",
+        "parent": 6
+    },
+    {
+        "id": 64,
+        "name": "23 mm",
+        "parent": 6
+    },
+    {
+        "id": 65,
+        "name": "24 mm",
+        "parent": 6
+    },
+    {
+        "id": 66,
+        "name": "25 mm",
+        "parent": 6
+    },
+    {
+        "id": 97,
+        "name": "26 mm",
+        "parent": 6
+    },
+    {
+        "id": 67,
+        "name": "28 mm",
+        "parent": 6
+    },
+    {
+        "id": 68,
+        "name": "29 mm",
+        "parent": 6
+    },
+    {
+        "id": 69,
+        "name": "30 mm",
+        "parent": 6
+    },
+    {
+        "id": 70,
+        "name": "32 mm",
+        "parent": 6
+    },
+    {
+        "id": 71,
+        "name": "33 mm",
+        "parent": 6
+    },
+    {
+        "id": 72,
+        "name": "35 mm",
+        "parent": 6
+    },
+    {
+        "id": 73,
+        "name": "38 mm",
+        "parent": 6
+    },
+    {
+        "id": 74,
+        "name": "40 mm",
+        "parent": 6
+    },
+    {
+        "id": 83,
+        "name": "42 mm",
+        "parent": 6
+    },
+    {
+        "id": 84,
+        "name": "43 mm",
+        "parent": 6
+    },
+    {
+        "id": 75,
+        "name": "45 mm",
+        "parent": 6
+    },
+    {
+        "id": 85,
+        "name": "48 mm",
+        "parent": 6
+    },
+    {
+        "id": 76,
+        "name": "50 mm",
+        "parent": 6
+    },
+    {
+        "id": 86,
+        "name": "53 mm",
+        "parent": 6
+    },
+    {
+        "id": 77,
+        "name": "55 mm",
+        "parent": 6
+    },
+    {
+        "id": 87,
+        "name": "58 mm",
+        "parent": 6
+    },
+    {
+        "id": 78,
+        "name": "6 mm",
+        "parent": 6
+    },
+    {
+        "id": 79,
+        "name": "60 mm",
+        "parent": 6
+    },
+    {
+        "id": 96,
+        "name": "63 mm",
+        "parent": 6
+    },
+    {
+        "id": 88,
+        "name": "65 mm",
+        "parent": 6
+    },
+    {
+        "id": 89,
+        "name": "68 mm",
+        "parent": 6
+    },
+    {
+        "id": 90,
+        "name": "70 mm",
+        "parent": 6
+    },
+    {
+        "id": 91,
+        "name": "75 mm",
+        "parent": 6
+    },
+    {
+        "id": 80,
+        "name": "8 mm",
+        "parent": 6
+    },
+    {
+        "id": 92,
+        "name": "80 mm",
+        "parent": 6
+    },
+    {
+        "id": 93,
+        "name": "85 mm",
+        "parent": 6
+    },
+    {
+        "id": 94,
+        "name": "90 mm",
+        "parent": 6
+    },
+    {
+        "id": 95,
+        "name": "95 mm",
+        "parent": 6
+    },
+    {
+        "id": 132,
+        "name": "Acero Inoxidable 304",
+        "parent": 10
+    },
+    {
+        "id": 138,
+        "name": "Acero inoxidable 316",
+        "parent": 10
+    },
+    {
+        "id": 144,
+        "name": "Hastelloy “C”",
+        "parent": 10
+    },
+    {
+        "id": 148,
+        "name": "Latón",
+        "parent": 10
+    },
+    
+    {
+        "id": 27,
+        "name": "1-1/2\"",
+        "parent": 4
+    },
+    {
+        "id": 28,
+        "name": "1-1/4\"",
+        "parent": 4
+    },
+    {
+        "id": 29,
+        "name": "1-1/8\"",
+        "parent": 4
+    },
+    {
+        "id": 30,
+        "name": "1-3/4\"",
+        "parent": 4
+    },
+    {
+        "id": 31,
+        "name": "1-3/8\"",
+        "parent": 4
+    },
+    {
+        "id": 32,
+        "name": "1-5/8\"",
+        "parent": 4
+    },
+    {
+        "id": 33,
+        "name": "1-7/8\"",
+        "parent": 4
+    },
+    {
+        "id": 34,
+        "name": "1\"",
+        "parent": 4
+    },
+    {
+        "id": 35,
+        "name": "1/2\"",
+        "parent": 4
+    },
+    {
+        "id": 36,
+        "name": "2-1/2\"",
+        "parent": 4
+    },
+    {
+        "id": 37,
+        "name": "2-1/4\"",
+        "parent": 4
+    },
+    {
+        "id": 38,
+        "name": "2-1/8\"",
+        "parent": 4
+    },
+    {
+        "id": 39,
+        "name": "2-3/4\"",
+        "parent": 4
+    },
+    {
+        "id": 40,
+        "name": "2-3/8\"",
+        "parent": 4
+    },
+    {
+        "id": 41,
+        "name": "2-5/8\"",
+        "parent": 4
+    },
+    {
+        "id": 42,
+        "name": "2-7/8\"",
+        "parent": 4
+    },
+    {
+        "id": 43,
+        "name": "2\"",
+        "parent": 4
+    },
+    {
+        "id": 98,
+        "name": "3-1/2\"",
+        "parent": 4
+    },
+    {
+        "id": 99,
+        "name": "3-1/4\"",
+        "parent": 4
+    },
+    {
+        "id": 100,
+        "name": "3-1/8\"",
+        "parent": 4
+    },
+    {
+        "id": 101,
+        "name": "3-3/4\"",
+        "parent": 4
+    },
+    {
+        "id": 102,
+        "name": "3-3/8\"",
+        "parent": 4
+    },
+    {
+        "id": 103,
+        "name": "3-5/8\"",
+        "parent": 4
+    },
+    {
+        "id": 104,
+        "name": "3-7/8\"",
+        "parent": 4
+    },
+    {
+        "id": 44,
+        "name": "3\"",
+        "parent": 4
+    },
+    {
+        "id": 45,
+        "name": "3/4\"",
+        "parent": 4
+    },
+    {
+        "id": 46,
+        "name": "3/8\"",
+        "parent": 4
+    },
+    {
+        "id": 105,
+        "name": "4\"",
+        "parent": 4
+    },
+    {
+        "id": 47,
+        "name": "5/8\"",
+        "parent": 4
+    },
+    {
+        "id": 48,
+        "name": "7/8\"",
+        "parent": 4
+    }
+
+]
