@@ -99,6 +99,39 @@ class ApiProvider extends ApiRepository {
 
     return productos;
   }
+  
+  @override
+  Future<List<Producto>> searchProducts(String query) async{
+
+    List<Producto> productos = [];
+    String querySearch = "&search=$query";
+    String parameter = "&per_page=70";
+
+    try {
+      var response = await Dio().get(
+        _url +
+            'products' +
+            '?consumer_key=' +
+            _ck +
+            '&consumer_secret=' +
+            _cs +
+            querySearch,
+        options: Options(
+            headers: {HttpHeaders.contentTypeHeader: "aplication/json"}),
+      );
+      if (response.statusCode == 200) {
+        final data =
+            (response.data as List).map((e) => Producto.fromJson(e)).toList();
+        productos = data;
+      }
+    } catch (e) {
+      print('error aqui 3: $e');
+    }
+
+    return productos;
+
+
+  }
 }
 //asi se obtienen los productos
 //https://www.fri.com.mx/api/wp-json/wc/v3/products?consumer_key=ck_5b58ada768ee4965512a05256ea1598280c504e4&consumer_secret=cs_3554796479b33c49c5fc5deb0c1b6dd248be5283

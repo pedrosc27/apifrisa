@@ -1,3 +1,4 @@
+import 'package:api/ui/global_widgets/error_horizontal.dart';
 import 'package:api/ui/global_widgets/productos_horizontal.dart';
 import 'package:api/ui/global_widgets/shimer_horizontal.dart';
 import 'package:api/ui/pages/home/home_provider.dart';
@@ -24,20 +25,22 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-  
-    final productos = context.watch<HomeProvider>().products;
+    final homeProvider = context.watch<HomeProvider>();
+    final productos = homeProvider.products;
+    final cargado = homeProvider.cargado;
+
     final sellos = productos
-        ?.where((element) => element.categories!
+        .where((element) => element.categories!
             .where((element) => element.id == 159)
             .isNotEmpty)
         .toList();
     final bombas = productos
-        ?.where((element) => element.categories!
+        .where((element) => element.categories!
             .where((element) => element.id == 154)
             .isNotEmpty)
         .toList();
     final juntas = productos
-        ?.where((element) => element.categories!
+        .where((element) => element.categories!
             .where((element) => element.id == 157)
             .isNotEmpty)
         .toList();
@@ -58,18 +61,30 @@ class _HomePageState extends State<HomePage> {
                   const CategoriasHome(),
                   const TituloListHorizontal(
                       titulo: "Sellos Mecánicos Populares"),
-                  sellos?.length == null
-                      ? const ShimmerHorizontal()
-                      : ProductosHorizontal(productos: sellos!),
+                  cargado
+                      ? Container(
+                          child: sellos.isEmpty
+                              ? const ErrorHorizontal()
+                              : ProductosHorizontal(productos: sellos),
+                        )
+                      : const ShimmerHorizontal(),
                   const TituloListHorizontal(
                       titulo: "Bombas Hidráulicas Populares"),
-                  bombas?.length == null
-                      ? const ShimmerHorizontal()
-                      : ProductosHorizontal(productos: bombas!),
+                  cargado
+                      ? Container(
+                          child: bombas.isEmpty
+                              ? const ErrorHorizontal()
+                              : ProductosHorizontal(productos: bombas),
+                        )
+                      : const ShimmerHorizontal(),
                   const TituloListHorizontal(titulo: "Laminado para Juntas"),
-                  juntas?.length == null
-                      ? const ShimmerHorizontal()
-                      : ProductosHorizontal(productos: juntas!),
+                  cargado
+                      ? Container(
+                          child: juntas.isEmpty
+                              ? const ErrorHorizontal()
+                              : ProductosHorizontal(productos: juntas),
+                        )
+                      : const ShimmerHorizontal(),
                   const SizedBox(
                     height: 40,
                   ),

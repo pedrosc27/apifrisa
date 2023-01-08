@@ -4,10 +4,13 @@ import 'package:flutter/cupertino.dart';
 
 class HomeProvider extends ChangeNotifier {
   final ApiProvider api = ApiProvider();
-  List<Producto>? products;
+  List<Producto> products = [];
+  bool cargado = false;
 
   Future<void> getProductsByCategories() async {
     products = await api.getProductsByCategories();
+    
+    cargado = true;
     notifyListeners();
   }
   

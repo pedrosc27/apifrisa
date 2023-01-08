@@ -1,4 +1,5 @@
 import 'package:api/domain/models/cart_model.dart';
+import 'package:api/ui/pages/carrito/carrito_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:api/domain/models/product_model.dart';
 import 'package:api/ui/global_widgets/productos_horizontal.dart';
@@ -38,8 +39,10 @@ class ProductoPageState extends State<ProductoPage> {
   }
 
   void _onShare(BuildContext context, String link) async {
+    final compartir = link.replaceAll("/api", "");
+    print(compartir);
     final box = context.findRenderObject() as RenderBox?;
-    await Share.share(link,
+    await Share.share(compartir,
         subject: 'link',
         sharePositionOrigin: box!.localToGlobal(Offset.zero) & box.size);
   }
@@ -308,8 +311,9 @@ class ProductoPageState extends State<ProductoPage> {
                           descripcion = "sin descripcion";
                         }
                       final productoCarrito = CartModel(nombre: producto.name, imagen: producto.images![0].src, descripcion: descripcion, cantidad: cantidad );
-
-                       await productoProvider.agregarProducto(productoCarrito);
+                      final carritoProvider = context.read<CarritoProvider>();
+                      await carritoProvider.agregarProducto(productoCarrito);
+                       
                       }),
                       child: Container(
                         width: (size.width * .5) - 16,

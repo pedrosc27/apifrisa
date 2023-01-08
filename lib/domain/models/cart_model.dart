@@ -28,7 +28,7 @@ class CartModel {
         nombre: json["nombre"],
         imagen: json["imagen"],
         descripcion: json["descripcion"],
-        cantidad: json["cantidad"],
+        cantidad: int.parse(json["cantidad"]) ,
     );
 
     Map<String, dynamic> toJson() => {

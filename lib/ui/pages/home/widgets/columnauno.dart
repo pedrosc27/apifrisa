@@ -1,6 +1,7 @@
 import 'package:api/domain/models/product_model.dart';
 import 'package:api/ui/pages/categoria/categoria.dart';
 import 'package:api/ui/pages/categoria/categoria_provider.dart';
+import 'package:api/ui/pages/producto/orings.dart';
 import 'package:api/ui/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -72,7 +73,7 @@ class ColumnaUno extends StatelessWidget {
             GestureDetector(
               onTap: (() {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) => const Categoria()));
+                    .push(MaterialPageRoute(builder: (_) => const OringsPage()));
               }),
               child: CircleAvatar(
                 radius: 30,

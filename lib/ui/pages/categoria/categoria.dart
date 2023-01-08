@@ -1,4 +1,5 @@
 import 'package:api/domain/models/product_model.dart';
+import 'package:api/ui/global_widgets/error_vertical.dart';
 import 'package:api/ui/global_widgets/productos_vertical.dart';
 import 'package:api/ui/global_widgets/shimer_vertical.dart';
 import 'package:api/ui/pages/categoria/categoria_provider.dart';
@@ -30,6 +31,7 @@ class _CategoriaState extends State<Categoria> {
   Widget build(BuildContext context) {
     final categoriaProvider = context.watch<CategoriaProvider>();
     final productos = categoriaProvider.productos;
+    final cargado = categoriaProvider.cargado;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: amarilloFrisa,
@@ -108,11 +110,14 @@ class _CategoriaState extends State<Categoria> {
                     ),
               const SizedBox(height: 20),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: productos.isEmpty
-                    ? const ShimerVertical()
-                    : ProductosVertical(productos: productos),
-              ),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: cargado
+                      ? Container(
+                          child: productos.isEmpty
+                              ? const ErrorVertical()
+                              : ProductosVertical(productos: productos),
+                        )
+                      : const ShimerVertical()),
               const SizedBox(height: 20)
             ],
           ),

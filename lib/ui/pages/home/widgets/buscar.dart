@@ -1,5 +1,7 @@
+import 'package:api/ui/pages/navigation/navigation_provider.dart';
 import 'package:api/ui/utils/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class Buscar extends StatefulWidget {
   const Buscar({Key? key}) : super(key: key);
@@ -12,7 +14,10 @@ class _BuscarState extends State<Buscar> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        final navigationProvider = context.read<NavigationProvider>();
+        navigationProvider.setSelected(1);
+      },
       child: Container(
         padding: const EdgeInsets.only(left: 16, right: 16),
         child: Column(
